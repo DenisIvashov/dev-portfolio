@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #0a0a0a;
+  --text-main: #ffffff;
+  --text-secondary: #a1a1aa;
+  --font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+}
+
+p, li, small {
+  color: var(--text-secondary);
+}
+
+/* Ссылки — чтобы не терялись на тёмном фоне */
+a {
+  color: #6fa8ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #9ad2ff;
+}
+
+/* Базовые карточки/блоки — чтобы сайт не выглядел как голый HTML */
+.card {
+  background: #121212;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Кнопки — сразу с нормальными отступами и состоянием hover */
+.btn {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  border-color: var(--text-main);
+  background: var(--text-secondary);
+  color: var(--bg-color);
+}
+
+/* Контейнер для центрирования контента */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Секции с небольшим отступом сверху */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
